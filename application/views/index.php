@@ -69,68 +69,7 @@
     
     <body>
 <script>
-	var array= [];
-	var d ='';
-	var i = 0;
-		function Metodo() {		
-							// primero obtener la equacion la pondremos en la variable a
-						//	var a=	'(e^x)-(sin(x))-2';
-						 	
-							var a=$('#inp_ecuacion').val();
-							console.log(a);
-							//var a1 = nerdamer.convertToLaTeX(a);
-							//console.log(a1.toString());
-							//  obtendremos la toleracia que la pondremos en la variable Ea
-							var Es= $('#inp_tolerancia').val(); //0.0001;//tolerancia
-							var Ea= 0;
-							// aqui esta el valor xi 
-							var xi =$('#inp_xi').val();
-							// i sera ll variable que nos dira el numero de iteraciones
-							
-							//	xd sera la derivada de a
-							var xd=nerdamer.diff(a, 'x');
-							console.log(xd.symbol.value);
-							//fxi es el valor de reemplazar xi en la function a
-							var fxi = nerdamer(a,{x:xi}).evaluate();
-							//fdxi es el valor de reemplazar xi en la funcion xd 
-							var fdxi = nerdamer(xd,{x:xi}).evaluate();
-							array.push(i);
-							array.push(xi);
-							
-								// metodo newton rapson
-								var xi1=  xi-(fxi/fdxi);
-								//alert(xi1);
-								array.push(xi1);
-								Ea=xi-xi1;
-								array.push(Ea);
-
-								//----
-									while(Ea>Es){
-										i++;
-										array.push(i);
-										xi=xi1;
-										array.push(xi);
-										//alert(xi);					//fxi es el valor de reemplazar xi en la function a
-										var fxi = nerdamer(a,{x:xi}).evaluate();
-										//fdxi es el valor de reemplazar xi en la funcion xd 
-										var fdxi = nerdamer(xd,{x:xi}).evaluate();
-										var xi1=  xi-(fxi/fdxi);
-										array.push(xi1);
-										console.log(xi1);
-										Ea=xi-xi1;
-										array.push(Ea);
-										console.log(Ea);
-
-										//alert("es menor");
-
-									}
-
-									
-									cargartabla();
-							
-
-
-			}
+	
 
 </script>
     
@@ -212,7 +151,7 @@
 
 				<!-- section heading -->
 				<div class="section-head">
-					<h3>Services.</h3>
+					<h3>INTRUCCIONES</h3>
 				</div>
 
 				<div class="row">
@@ -221,67 +160,33 @@
 					<div class="col-md-4">
 						<div class="item">
 							<span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
-							<h6>Web Design</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<h6>INTRODUCIR SU ECUACION </h6>
+							<p>aqui el usuario debera introducir la ecuacion con respecto a x ya igualada a 0 </p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
 							<span class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
-							<h6>Branding</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<h6>INTRODUCIR LA TOLERANCIA</h6>
+							<p>aqui el usuario debera introducir la tolerancia  ej: 0.0001 , 0.000001</p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
 							<span class="icon"><i class="fa fa-umbrella" aria-hidden="true"></i></span>
-							<h6>Development</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<h6>INTRODUCIR XI </h6>
+							<p> aqui el usuario debera introducir el primer valor para comenzar con la iteracion</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="item">
-							<span class="icon"><i class="fa fa-diamond" aria-hidden="true"></i></span>
-							<h6>Creative Design</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="item">
-							<span class="icon"><i class="fa fa-television" aria-hidden="true"></i></span>
-							<h6>Fully Responsive</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="item">
-							<span class="icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
-							<h6>Retina Ready</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="item">
-							<span class="icon"><i class="fa fa-diamond" aria-hidden="true"></i></span>
-							<h6>Creative Design</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="item">
-							<span class="icon"><i class="fa fa-television" aria-hidden="true"></i></span>
-							<h6>Fully Responsive</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="item">
-							<span class="icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
-							<h6>Retina Ready</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
-						</div>
-					</div>
+					
 				</div><!-- /row -->
+				<div class="row">
+				<div class="col-md-12">
+						<div class="item">
+							<img src="<?php echo base_url(); ?>application/assets/grafica.gif" alt="">
+						</div>
+					</div>
+				</div>
 			</div><!-- /container -->
 		</section>
 		<!-- ====== End Services ======  -->
@@ -289,17 +194,22 @@
 		<!--====== Portfolio ======-->
 		<section class="portfolio section-padding pb-70" data-scroll-index="3">
 			<div class="container">
+						<!-- section heading -->
+						<div class="section-head">
+					<h3>NEWTON RAPHSON</h3>
+				</div>
 						<div id="cabezera" >
 								<div class="messages"></div>
 
 		                    <div class="controls">
 
 		                      <div class="row">
-		                            <div class="col-md-5">
+		                            <div class="col-md-4">
 		                                <div class="form-group">
-																			<label> EQUACION</label>
-		                                    <input id="inp_ecuacion" type="text" name="inp_ecuacion" placeholder="xxxx" required="required">
-		                                </div>
+																			<label> ECUACION   F(x)</label>
+		                                    <input id="inp_ecuacion" type="text" name="inp_ecuacion" placeholder="xxxx" required="required">=0
+																		</div>
+																		
 		                            </div>
 
 		                             <div class="col-md-3">
@@ -317,7 +227,8 @@
 		                        
 		                            <div class="col-md-3">
 																		
-																		<Button onclick="Metodo()" class="buton buton-bg">Buttom</Button>
+																		<Button id="btncalcular" type="button" class="buton buton-bg">CALCULAR</Button>
+																		<button id="btnreiniciar" type="button" class="buton buton-bg">Reiniciar</button>
 		                            </div>
 		                        </div>
 		                    
@@ -328,19 +239,20 @@
           <table id="idtabla" class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
             <thead>
               <tr>
-							<th>#</th>
-                <th>X-i</th>
-                <th>X-i+1</th>
-                <th>Error</th>
+							<th>Error</th>
+                <th>Xi+1</th>
+                <th>Xi</th>
+                <th>#</th>
                 
               </tr>
             </thead>
             <tfoot>
               <tr>
+							<th>Error</th>
+                <th>Xi+1</th>
+                <th>Xi</th>
                 <th>#</th>
-                <th>X-i</th>
-                <th>X-i+1</th>
-                <th>Error</th>
+                
                 
               </tr>
             </tfoot>
@@ -368,7 +280,7 @@
 
 					<!-- section heading -->
 					<div class="section-head">
-						<h3>Testimonials.</h3>
+						<h3>INTEGRANTES</h3>
 					</div>
 
 					<!-- owl carousel -->
@@ -378,7 +290,7 @@
 							<!-- citems -->
 							<div class="citem">
 								<div class="author-img">
-									<img src="<?php echo base_url(); ?>application/assets/foto1.jpg" alt="">
+									<img src="<?php echo base_url(); ?>application/assets/foto12.png" alt="">
 								</div>
 								<p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 								<h6>Alex Smith</h6>
@@ -553,10 +465,34 @@
 				
 				
 				<script>
+
+$("#btncalcular").click(
+                   function () {
+											Metodo();
+                                    
+                                      
+                          });            
+                              
 		
-			function cargartabla(){
+			
+													$("#btnreiniciar").click(
+                   function () {
+										$('#inp_ecuacion').val('');
+										$('#inp_xi').val('');
+										$('#inp_tolerancia').val(''); 
+                                    
+                                      
+                          });            
+                              
+		
+			
+
+
+				function cargartabla(){
 				var myJsonString = JSON.stringify(array);
 				console.log(myJsonString);
+				var	arraytabla=[];
+				
 			for (var j = 0; j < i; j++) {
 					d+= '<tr>'+
 					'<td>'+array.pop()+'</td>'+
@@ -569,6 +505,74 @@
 				$("#idtabla").append(d);
 					
 			}
+
+
+
+
+
+			var array= [];
+	var d ='';
+	var i = 0;
+		function Metodo() {		
+							// primero obtener la equacion la pondremos en la variable a
+						//	var a=	'(e^x)-(sin(x))-2';
+						 	
+							var a=$('#inp_ecuacion').val();
+							console.log(a);
+							//var a1 = nerdamer.convertToLaTeX(a);
+							//console.log(a1.toString());
+							//  obtendremos la toleracia que la pondremos en la variable Ea
+							var Es= $('#inp_tolerancia').val(); //0.0001;//tolerancia
+							var Ea= 0;
+							// aqui esta el valor xi 
+							var xi =$('#inp_xi').val();
+							// i sera ll variable que nos dira el numero de iteraciones
+							
+							//	xd sera la derivada de a
+							var xd=nerdamer.diff(a, 'x');
+							console.log(xd.symbol.value);
+							//fxi es el valor de reemplazar xi en la function a
+							var fxi = nerdamer(a,{x:xi}).evaluate();
+							//fdxi es el valor de reemplazar xi en la funcion xd 
+							var fdxi = nerdamer(xd,{x:xi}).evaluate();
+							array.push(i);
+							array.push(xi);
+							
+								// metodo newton rapson
+								var xi1=  xi-(fxi/fdxi);
+								//alert(xi1);
+								array.push(xi1);
+								Ea=xi-xi1;
+								array.push(Ea);
+
+								//----
+									while(Ea>Es){
+										i++;
+										array.push(i);
+										xi=xi1;
+										array.push(xi);
+										//alert(xi);					//fxi es el valor de reemplazar xi en la function a
+										var fxi = nerdamer(a,{x:xi}).evaluate();
+										//fdxi es el valor de reemplazar xi en la funcion xd 
+										var fdxi = nerdamer(xd,{x:xi}).evaluate();
+										var xi1=  xi-(fxi/fdxi);
+										array.push(xi1);
+										console.log(xi1);
+										Ea=xi-xi1;
+										array.push(Ea);
+										console.log(Ea);
+
+										
+
+									}
+									alert("el valor de la raiz es= "+ xi1);
+									
+									cargartabla();
+							
+
+
+			}
+			
 
     </script>
 <!-- Bootstrap Core JavaScript -->

@@ -34,12 +34,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('index', $d);
 	
 	}
-	public function plantilla1()
+	public function vistagrafica()
 	{	
 		$d = array();
 		$this->Msecurity->url_and_lan($d);
 
-		$this->load->view('index1', $d);
+		$this->load->view('grafica', $d);
 	
 	}
 

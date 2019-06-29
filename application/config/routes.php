@@ -12,7 +12,8 @@ $route[$l.'personas']                 		= 'Persona';
 
 $route['default_controller']               = 'Welcome';
 /*****dashboard ******/
-$route[$l.'dash_v2']                 		= 'Dashboard/dashv2';
+$route[$l.'grafica']                 		= 'Welcome/vistagrafica';
+
 $route[$l.'dash_eco']                 		= 'Dashboard/ecommerce';
 $route[$l.'dash_analytics']                 		= 'Dashboard/analytics';
 $route[$l.'dash_team']                 		= 'Dashboard/team';
