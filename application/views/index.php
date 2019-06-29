@@ -193,24 +193,7 @@
 			        </h1>
 					
 
-			          		<!-- social icons -->
-			          		<div class="social-icon">
-			          			<a href="#0">
-			          				<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-			          			</a>
-			          			<a href="#0">
-			          				<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-			          			</a>
-			          			<a href="#0">
-			          				<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-			          			</a>
-			          			<a href="#0">
-			          				<span><i class="fa fa-behance" aria-hidden="true"></i></span>
-			          			</a>
-			          			<a href="#0">
-			          				<span><i class="fa fa-youtube" aria-hidden="true"></i></span>
-			          			</a>
-			          		</div>
+			          	
 						</div>
 						<!-- end caption -->
 					</div>
@@ -321,11 +304,13 @@
 
 		                             <div class="col-md-3">
 		                                <div class="form-group">
+																		<label> Tolerancia</label>
 		                                    <input id="inp_tolerancia" type="number" name="inp_tolerancia" placeholder="0.0001" required="required">
 		                                </div>
 																</div>
 																<div class="col-md-3">
 																			<div class="form-group">
+																			<label>XI</label>
 																			<input id="inp_xi" type="number" name="inp_xi" placeholder="00000" required="required">
 																			</div>
 																</div>
