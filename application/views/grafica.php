@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     	 <!-- Bootstrap Core CSS -->
-	
+         <script src="http://nerdamer.com/js/nerdamer.core.js"></script>
+        <script src="http://nerdamer.com/js/Algebra.js"></script>
+        <script src="http://nerdamer.com/js/Calculus.js"></script>
 			<!-- Custom CSS -->
 			<link href="<?php echo base_url(); ?>application/assets/nerdamer/css/site.css" rel="stylesheet">
 			<link href="<?php echo base_url(); ?>application/assets/nerdamer/css/style.css" rel="stylesheet">
@@ -36,7 +38,11 @@
 			<script src="<?php echo base_url(); ?>application/assets/nerdamer/plugins/codemirror/addon/active-line.js"></script> 
 			<link rel="stylesheet" href="<?php echo base_url(); ?>application/assets/nerdamer/plugins/codemirror/theme/neat.css">
 			<!-- katex -->
-			<script src="<?php echo base_url(); ?>application/assets/nerdamer/plugins/katex/katex.min.js"></script> 
+            <script src="<?php echo base_url(); ?>application/assets/nerdamer/plugins/katex/katex.min.js"></script> 
+            
+
+
+            
 </head>
 <body>
 <div  id="cabeza">
@@ -46,7 +52,7 @@
                     <!--<input id="text-input" class="demo-input" type="text" placeholder="Text editor. Enter expression here"/>-->
                     <textarea id="codemirror">    </textarea>
                 </div>
-                <button class="btn btn-primary" id="process-btn" onclick="Metodo()" >ENTER</button>
+                <button class="btn btn-primary" id="process-btn"  >ENTER</button>
                 <div class="pull-right">
                     <div class="checkbox">
                         <label>
@@ -87,7 +93,8 @@
 <script>
 		$('.date').html(new Date().getFullYear());
 </script>
-
+<script src="<?php echo base_url(); ?>application/assets/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>application/assets/nerdamer/js/demo.js"></script>
 <script src="<?php echo base_url(); ?>application/assets/nerdamer/plugins/guppy/build/guppy.min.js"></script>
 <script src="<?php echo base_url(); ?>application/assets/nerdamer/plugins/guppy/build/guppy_osk.js"></script>
 <script src="<?php echo base_url(); ?>application/assets/nerdamer/plugins/d3/d3.min.js"></script>
@@ -179,6 +186,6 @@ $('.CodeMirror').addClass('demo-input').attr('id', 'text-input');
 </script>
 
 
-    
+
 </body>
 </html>
