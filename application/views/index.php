@@ -164,11 +164,9 @@
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#" data-scroll-nav="0" class="active">Home</a></li>
 		        <li><a href="#" data-scroll-nav="1">About</a></li>
-		        <li><a href="#" data-scroll-nav="2">Services</a></li>
-		        <li><a href="#" data-scroll-nav="3">Works</a></li>
-		        <li><a href="#" data-scroll-nav="4">Clients</a></li>
-		        <li><a href="#" data-scroll-nav="5">Blog</a></li>
-		        <li><a href="#" data-scroll-nav="6">Contact</a></li>
+		        <li><a href="#" data-scroll-nav="2">Comandos</a></li>
+		        <li><a href="#" data-scroll-nav="4">Integrantes</a></li>
+		        
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container -->
@@ -395,7 +393,7 @@
 							<!-- citems -->
 							<div class="citem">
 								<div class="author-img">
-									<img src="<?php echo base_url(); ?>application/assets/img/clients/1.jpg" alt="">
+									<img src="<?php echo base_url(); ?>application/assets/foto1.jpg" alt="">
 								</div>
 								<p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 								<h6>Alex Smith</h6>
@@ -404,22 +402,14 @@
 
 							<div class="citem">
 								<div class="author-img">
-									<img src="<?php echo base_url(); ?>application/assets/img/clients/1.jpg" alt="">
+									<img src="<?php echo base_url(); ?>application/assets/foto2.jpg" alt="">
 								</div>
 								<p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 								<h6>Alex Smith</h6>
 								<span>Envato Customer</span>
 							</div>
 
-							<div class="citem">
-								<div class="author-img">
-									<img src="<?php echo base_url(); ?>application/assets/img/clients/1.jpg" alt="">
-								</div>
-								<p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-								<h6>Alex Smith</h6>
-								<span>Envato Customer</span>
-							</div>
-						</div>
+					
 					</div>
 				</div><!-- /row -->
 			</div><!-- /container -->
@@ -470,6 +460,56 @@
 		<!--====== End Numbers ======-->
 
 		<!--====== Blog ======-->
+		<section class="blog section-padding bg-gray" data-scroll-index="5">
+			<div class="container">
+				<div class="row">
+
+					<!-- section heading -->
+					<div class="section-head">
+						<h3>Our Blog.</h3>
+					</div>
+
+					<!-- owl carsouel -->
+					<div class="owl-carousel owl-theme">
+
+						<!-- pitems -->
+						<div class="pitem">
+							<div class="post-img">
+								<img src="<?php echo base_url(); ?>application/assets/foto1.JPG" alt="">
+							</div>
+							<div class="content">
+								
+								<h4>
+									<a href="#0">Roger Andrés Villarroel </a>
+								</h4>
+								<span class="more">
+									<a href="#0">Read More</a>
+								</span>
+							</div>
+						</div>
+
+						<div class="pitem">
+							<div class="post-img">
+								<img src="<?php echo base_url(); ?>application/assets/foto2.jpg" alt="">
+							</div>
+							<div class="content">
+								<h6 class="tag">
+									<a href="#0">Leonardo ayala cayo</a>
+								</h6>
+								<h4>
+									<a href="#0">Leonardo Ayala Cayo</a>
+								</h4>
+								<span class="more">
+									<a href="#0">Read More</a>
+								</span>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</section>
 	
 		<!--====== End Blog ======-->
 
