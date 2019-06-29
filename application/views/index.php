@@ -176,7 +176,7 @@
 		<!-- ====== End Navgition ======  -->
 
 		<!-- ====== Header ======  -->
-		<section id="home" class="header" data-scroll-index="0" style="background-image: url(<?php echo base_url(); ?>application/assets/img/bg.jpg);" data-stellar-background-ratio="0.8">
+		<section id="home" class="header" data-scroll-index="0" style="background-image: url(<?php echo base_url(); ?>application/assets/lg.gif);" data-stellar-background-ratio="0.8">
 
 			<div class="v-middle">
 				<div class="container">
